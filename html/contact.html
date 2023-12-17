@@ -7,6 +7,7 @@
 
 </head>
 <body>
+
 <header class="header">
 
 	<div id="top" class="navigation">
@@ -40,10 +41,13 @@
 				</div>
 	
 				<form class="contact__form">
-					<input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
-					<input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
-					<textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
-					<input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+					<input onblur="alpha()" id="name" class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
+					<label id="error_name">
+					<input onblur="emailVal()" id="email" class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
+					<label id="error_email">
+					<textarea onblur="descFiled()" id="message" class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
+					<label id="error_desc">
+					<input id="submit" class="contact__form-el contact__form-el--submit" type="submit" onclick="save()" value="Send">
 				</form>
 			</div>
 		</section>
@@ -53,5 +57,8 @@
 			
 		</div>
 	</footer>
+	<script src="../js/code.js"></script>
 </body>
 </html>
+
+

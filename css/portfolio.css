@@ -1,9 +1,12 @@
-body
-{
-  font-family: Segoe UI;
-  line-height:1.5;
-  color: #333;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	 font-family: Segoe UI;
+	line-height:1.5;
+	color: #333;
 }
+
 
 .wrapper--large
 {
@@ -23,6 +26,7 @@ body
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 2rem;
 }
 
 .navigation__logo
